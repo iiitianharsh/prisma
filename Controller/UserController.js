@@ -30,7 +30,7 @@ export const createUser = async (req, res) => {
       message: "Email Already Taken . please another email.",
     });
   }
-
+ 
   const newUser = await prisma.user.create({
     data: {
       name: name,
